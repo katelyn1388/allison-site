@@ -55,7 +55,7 @@ export function Footer({ title }: { title: string }) {
           </div>
         </div>
       ) : (
-        <div className="footer text-center pt-2 d-print-none">
+        <div className="footer text-center d-print-none">
           <div className="nav-bar d-flex justify-content-evenly">
             <div>
               <Link to="/" className={title === 'Home' ? 'active-page nav-link' : 'nav-link'}>
