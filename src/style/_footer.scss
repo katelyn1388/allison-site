@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--bs-primary);
-    height: 15rem;
+    height: 10rem;
+    // height: 14rem;
     width: 100%;
     font-family: "Times New Roman", Times, serif;
     box-shadow: 0px 5px 15px rgb(55, 55, 55);
@@ -30,6 +31,8 @@
     //     position: absolute;
     //     left: 0;
     // }
+
+    white-space: pre-wrap;
 }
 
 
