@@ -16,19 +16,6 @@ export function Footer({ title }: { title: string }) {
 
     const { mobileView } = UseMobileView();
 
-    const openMaps = useCallback(() => {
-        if (
-            navigator.platform.indexOf('iPhone') !== -1 ||
-            navigator.platform.indexOf('iPod') !== -1 ||
-            navigator.platform.indexOf('iPad') !== -1
-        )
-            window.open('maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=@38.4667273,-90.3855223');
-        else
-            window.open(
-                'https://www.google.com/maps?rlz=1C1CHBF_enUS1039US1039&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KTG1H0OKx9iHMTnl4oHb-7tH&daddr=5644+Telegraph+Rd,+St.+Louis,+MO+63129'
-            );
-    }, []);
-
     return (
         <div>
             {mobileView ? (

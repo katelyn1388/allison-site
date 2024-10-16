@@ -97,6 +97,7 @@ export function Header({ title }: { title: string }) {
                     </div>
                 </div>
             )}
+            <div></div>
         </div>
     );
 }

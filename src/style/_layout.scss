@@ -6,6 +6,7 @@ div#root,
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
     min-width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
 
     .main-content {
 
@@ -114,4 +115,25 @@ div#root,
 
 .clickable-text:hover {
     cursor: pointer;
+}
+
+.services {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+  
+.service {
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    filter: saturate(95%);
+
+
+    .service-text {
+        background-color: hsla(0, 0%, 0%, 0.4);
+        color: white;
+    }
 }
