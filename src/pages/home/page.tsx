@@ -4,7 +4,7 @@ import { AppLayout } from '../layout';
 export default function Page() {
     return (
         <AppLayout title='Home'>
-            <div className=''>
+            <div>
                 <Services />
             </div>
         </AppLayout>
