@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-// import AllisonPic from '../assets/allison-img.svg';
 import AllisonPic from '../assets/allison-img.png';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { UseMobileView } from '../hooks/use-mobile-view';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping, faLocationDot, faPhone, faScissors } from '@fortawesome/free-solid-svg-icons';
@@ -59,7 +58,7 @@ export function Footer({ title }: { title: string }) {
                     </div>
                 </div>
             ) : (
-                <div className='footer text-center d-print-none'>
+                <div className='footer text-center d-print-none mt-0'>
                     {/* <div className='mt-2 mb-3 d-flex justify-content-evenly'>
                         <div>
                             <Link to='/' className={title === 'Home' ? 'active-page nav-link' : 'nav-link'}>
@@ -82,12 +81,12 @@ export function Footer({ title }: { title: string }) {
                             </Link>
                         </div>
                     </div> */}
-                    <div className='d-flex justify-content-evenly mt-4'>
-                        <div>
+                    <div className='d-flex justify-content-evenly mt-0'>
+                        <div className='mt-2'>
                             <img src={AllisonPic} height='100px' width='100px' className='rounded-circle mb-1' alt='Allison Logo' />
                             <h6>Poopy Butt Salon</h6>
                         </div>
-                        <div className='mt-2 w-25'>
+                        <div className='mt-4 w-25'>
                             <p>Hours: </p>
                             <div className='d-flex flex-column'>
                                 <div className='d-flex justify-content-around'>
@@ -101,7 +100,7 @@ export function Footer({ title }: { title: string }) {
                             </div>
                         </div>
                         <div className='d-flex justify-content-between'>
-                            <div className='d-flex mt-2 flex-column align-items-start me-5'>
+                            <div className='d-flex mt-4 flex-column align-items-start me-5'>
                                 <p>
                                     <a
                                         target='_blank'
@@ -124,7 +123,7 @@ export function Footer({ title }: { title: string }) {
                                     </a>
                                 </p>
                             </div>
-                            <div className='d-flex mt-2 flex-column align-items-start'>
+                            <div className='d-flex mt-4 flex-column align-items-start'>
                                 <p>
                                     <a
                                         target='_blank'

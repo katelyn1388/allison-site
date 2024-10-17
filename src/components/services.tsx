@@ -1,7 +1,7 @@
 export function Services() {
     return (
         <div>
-            <h4 className='text-center mb-4'>Services</h4>
+            <h3 className='text-center mb-4 mt-4'>Services</h3>
             <div className='d-flex justify-content-around services'>
                 <Service imgUrl='/images/tattooist.png' text='Haircutting' />
                 <Service imgUrl='/images/color.png' text='Color' />

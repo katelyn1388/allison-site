@@ -10,7 +10,7 @@ export function AppLayout({ children, title }: PropsWithChildren<{ title: string
                 <div className={`flex-fill w-100 main-content`}>
                     <Header title={title} />
                     <HeroImage title={title} />
-                    <div className='content'>{children}</div>
+                    <div className='content d-flex flex-column min-vh-100'>{children}</div>
                     <Footer title={title} />
                 </div>
             </div>
