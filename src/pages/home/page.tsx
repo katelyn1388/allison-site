@@ -6,43 +6,29 @@ import { AppLayout } from '../layout';
 export default function Page() {
     return (
         <AppLayout title='Home'>
-            <div>
-                <Services />
-                <Certificates />
-                <PreviousWork />
+            <div className='mt-5 flex-column d-flex align-items-center px-0'>
                 <div
                     style={{
-                        position: 'absolute',
-                        top: 650,
-                        zIndex: '0 !important',
-                        left: '2.9rem',
+                        height: '70rem',
                         width: '95%',
-                        height: '55rem',
                         backgroundColor: 'var(--highlight-box)',
+                        backgroundImage: 'linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%)',
                     }}
-                />
+                >
+                    <Services />
+                    <Certificates />
+                </div>
                 <div
                     style={{
-                        position: 'absolute',
-                        top: 1530,
-                        zIndex: '0 !important',
-                        left: '0rem',
-                        width: '2.5%',
-                        height: '42rem',
-                        backgroundColor: 'var(--secondary-highlight-box)',
+                        height: '45rem',
+                        width: '100%',
+                        backgroundColor: 'var(--bs-body-bg)',
+                        backgroundImage:
+                            'linear-gradient(to right, var(--secondary-highlight-box) 2.5%, rgba(0,0,0,0) 2.5%, rgba(0,0,0,0) 97.5%, var(--secondary-highlight-box) 97.5%)',
                     }}
-                />
-                <div
-                    style={{
-                        position: 'absolute',
-                        top: 1530,
-                        zIndex: '0 !important',
-                        right: '0rem',
-                        width: '2.5%',
-                        height: '42rem',
-                        backgroundColor: 'var(--secondary-highlight-box)',
-                    }}
-                />
+                >
+                    <PreviousWork />
+                </div>
             </div>
         </AppLayout>
     );

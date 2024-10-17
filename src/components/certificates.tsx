@@ -1,6 +1,6 @@
 export function Certificates() {
     return (
-        <div className='text-center mt-5 text-align-center certificates'>
+        <div className='text-center mt-5 certificates d-flex flex-column align-items-center'>
             <h3 className='text-center mb-4'>About Allison Luckert</h3>
             <p className='text-center d-flex justify-content-center align-items-center move w-75 mb-5'>
                 Allison is a curl specialist located in St Louis, MO. She works at Salon Beautique and is also a manager there. She

@@ -7,15 +7,6 @@ div#root,
     color: var(--bs-body-color);
     min-width: fit-content;
     font-family: 'Times New Roman', Times, serif;
-
-    .main-content {
-
-        .content {
-            padding: 1rem;
-            
-        }
-    }
-
 }
 
 @media screen {
@@ -24,90 +15,73 @@ div#root,
     }
 }
 
-.weather-widget {
-    border: thick double rgba(0, 0, 0, 0.559);
-    width: 20rem;
-    margin: 3rem;
-    margin-left: .5rem;
-    text-align: center;
-}
-
-.widget-title {
-    border-bottom: 2px;
-    text-align: center;
-}
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
     .page-root {
         font-size: 15px;
 
-        .weather-widget {
-            width: 18rem;
-        }
-
-        .big-facts {
-            max-width: 20rem;
-            text-align: center;
-
-            .flags {
-                flex-direction: column;
-            }
-        }
-
-        .country-facts {
-            padding-left: 0;
-            max-width: 20rem;
-        }
-
-        .country-header {
-            display: flex;
-            flex-direction: column;
-            max-width: 20rem;
-        }
+        
     }
-}
 
-@media only screen and (max-width: 1000px) {
-    .country-facts {
-        max-width: 35rem;
+   .big-previous {
+        height: 12rem !important;
+        width: 5rem !important;
+        background-size: 5rem 12rem !important;
     }
-}
 
-.country-facts {
-    width: 45rem;
-}
-
-.big-facts {
-    max-width: 45rem;
-    text-align: center;
-    align-self: center !important;
-
-    .flags {
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
+    .small-previous {
+        height: 8rem !important;
+        width: 8rem !important;
+        background-size: 8rem 8rem !important;
+        background-position: center center;
     }
+
+    // .service {
+    //     height: 5rem !important;
+    //     width: 5rem !important;
+    //     background-size: 5rem 5rem !important;
+    // }
 }
 
-.country-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+@media only screen and (min-width: 930px) {
+    .big-previous {
+        height: 22rem !important;
+        width: 14rem !important;
+        background-size: 14rem 22rem !important;
+    }
+
+   .small-previous {
+        height: 10rem !important;
+        width: 10rem !important;
+        background-size: 10rem 10rem !important;
+        background-position: center center;
+   }
 }
+
+
+@media only screen and (min-width: 1400px) {
+    .big-previous {
+        height: 32rem !important;
+        width: 25rem !important;
+        background-size: 25rem 32rem !important;
+    }
+
+   .small-previous {
+        height: 15rem !important;
+        width: 15rem !important;
+        background-size: 15rem 15rem !important;
+        background-position: center center;
+   }
+}
+
 
 .custom-link {
     color: white;
     text-decoration: none;
 }
 
-.old-img {
-    opacity: 50%;
-} 
-
-.new-img {
-    border: 2px ridge var(--bs-primary);
-}
 
 .clickable-text {
     font-weight: 700;
@@ -118,10 +92,10 @@ div#root,
 }
 
 .services {
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     z-index: 10;
-    position: relative;
+    // position: relative;
 }
   
 .service {
@@ -166,12 +140,19 @@ div#root,
     }
 }
 
-.move {
-    margin-left: 15rem;;
-}
+// .move {
+//     justify-self: center;
+//     display: flex;
+// }
 
 .certificates {
     z-index: 10;
     position: relative;
-    // color: white;
+}
+
+
+.haircutting {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 8rem;
 }
