@@ -5,6 +5,7 @@
     box-shadow: 0px 2px 1px #3218637c;
     font-family: "Times New Roman", Times, serif;
     box-shadow: 0px 5px 15px rgba(55, 55, 55, 0.559);
+    text-align: center;
 
     .nav-bar {
         margin-top: 2rem;
@@ -35,12 +36,13 @@
         font-size: 20px;
         min-width: 100%;
         margin: 0;
+        
 
 
         .page-title {
             margin: 0;
             padding: 0;
-            font-size: 20px;
+            font-size: 35px;
         }
     }
 }
@@ -59,20 +61,20 @@
     width: 2rem;
     height: .25rem;
     border-radius: 10px;
-    background-color: #2e1460;
+    background-color: var(--bs-body-bg);
     transform-origin: 1px;
     margin: .2rem;
     transition: all .3s linear;
 }
 
 .navigation ul{
-    background-color: #a88bf0;
+    background-color: var(--bs-primary);
     height: 15vh;
     width: 22vw;
     margin-top: .5rem;
     position: absolute;
     list-style-type: none;
     text-align: center;
-    box-shadow: 1px 3px 2px #3218637c;
+    box-shadow: 1px 3px 2px #29282a7c;
     padding: 0
 }

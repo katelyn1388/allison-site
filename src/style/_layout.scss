@@ -58,6 +58,10 @@ div#root,
         background-size: 10rem 10rem !important;
         background-position: center center;
    }
+
+   .hero-image {
+    height: 15rem;
+   }
 }
 
 
@@ -74,6 +78,10 @@ div#root,
         background-size: 15rem 15rem !important;
         background-position: center center;
    }
+}
+
+.saturation {
+    filter: saturate(85%);
 }
 
 

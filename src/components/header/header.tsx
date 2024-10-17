@@ -22,9 +22,6 @@ export function Header({ title }: { title: string }) {
                             <div className='col' onClick={toggleHamburger}>
                                 <Hamburger isOpen={hamburgerOpen} />
                             </div>
-                            <span className='d-inline'>
-                                <ThemePicker />
-                            </span>
                         </div>
                         <ul style={{ display: hamburgerOpen ? 'block' : 'none', minHeight: '9rem' }} className='dropdown-menu'>
                             <li>
@@ -47,20 +44,15 @@ export function Header({ title }: { title: string }) {
                                     Recommendations
                                 </Link>
                             </li>
-                            {/* <li>
-                <Link to="/newzealand" className={title === 'New Zealand' ? 'active-page nav-link' : 'nav-link'}>
-                  New Zealand
-                </Link>
-              </li> */}
                         </ul>
                     </div>
-                    <div className='col'>
-                        <h2 className='page-title'>PB Salon</h2>
+                    <div className='col justify-self-center'>
+                        <h1 className='page-title'>PB Salon</h1>
                     </div>
+                    <div className='col'></div>
                 </div>
             ) : (
                 <div className='header text-center pt-2 d-print-none'>
-                    {/* <img src={LogoPic} height="80px" width="80px" className="rounded logo m-3 mt-2" alt="Merlinie Logo" /> */}
                     <div className='d-flex justify-content-between'>
                         <div></div>
                         <h1 className='page-title ms-5'>Poopy Butt Salon</h1>
