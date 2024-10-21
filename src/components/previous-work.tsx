@@ -6,7 +6,7 @@ export function PreviousWork() {
 
     return (
         <div className='mb-5' style={{ width: '75%', margin: 'auto' }}>
-            <h3 className='text-center mb-4' style={{ marginTop: '6rem' }}>
+            <h3 className='text-center mb-4' style={{ marginTop: '3rem' }}>
                 Previous Work
             </h3>
             <div className='d-flex justify-content-around flex-wrap'>

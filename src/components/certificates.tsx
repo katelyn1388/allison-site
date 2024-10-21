@@ -1,3 +1,5 @@
+import { UseMobileView } from '../hooks/use-mobile-view';
+
 export function Certificates() {
     return (
         <div className='text-center mt-5 certificates d-flex flex-column align-items-center'>
@@ -8,7 +10,7 @@ export function Certificates() {
                 specialist by taking extra classes in the different curly cut techniques and she even has several certificates
             </p>
 
-            <div className='d-flex justify-content-around w-100'>
+            <div className='d-flex justify-content-around flex-wrap'>
                 <Certificate
                     imgUrl='/images/rezo.png'
                     text='A Rezo cut is a specialized technique for curly and textured hair that increases volume, defines your curl pattern and 
@@ -22,7 +24,7 @@ export function Certificates() {
                     name='Cadō Certified'
                 />
             </div>
-            <div className='d-flex justify-content-around mt-5'>
+            <div className='d-flex justify-content-around mt-5 flex-wrap'>
                 <Certificate
                     imgUrl='/images/ford.png'
                     text='Cut It Kinky sets the standard for expertise in the art and science of tight curls and natural hair.'
@@ -39,8 +41,10 @@ export function Certificates() {
 }
 
 function Certificate({ imgUrl, text, name }: { imgUrl: string; text: string; name: string }) {
+    const { mobileView } = UseMobileView();
+
     return (
-        <div className='w-25'>
+        <div className={`${mobileView ? 'w-75 mt-3' : 'w-25'}`}>
             <h5 className='text-center'>{name}</h5>
             <hr />
             <div className='d-flex justify-content-between align-items-center'>

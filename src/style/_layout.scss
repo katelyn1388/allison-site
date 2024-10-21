@@ -44,7 +44,7 @@ div#root,
     }
 
     .home-box {
-        height: 80rem !important;
+        height: 78rem !important;
         width: 90%;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 9%, rgba(0,0,0,0) 9%) !important;
@@ -188,11 +188,6 @@ div#root,
     }
 }
 
-// .move {
-//     justify-self: center;
-//     display: flex;
-// }
-
 .certificates {
     z-index: 10;
     position: relative;
@@ -203,4 +198,8 @@ div#root,
     margin-left: 15rem;
     margin-right: 15rem;
     margin-top: 8rem;
+}
+
+.dropdown-menu {
+    color: white;
 }

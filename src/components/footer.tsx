@@ -108,7 +108,7 @@ export function Footer({ title }: { title: string }) {
                         <img src={AllisonPic} height='100px' width='100px' className='rounded-circle mb-1 saturation' alt='Allison Logo' />
                         <h6>Poopy Butt Salon</h6>
                     </div>
-                    <div className='col-6 col-sm-3 mt-4'>
+                    <div className='col-6 col-sm-3 mt-4 text-center'>
                         <p>Hours: </p>
                         <div className='d-flex flex-column'>
                             <div className='d-flex justify-content-around'>

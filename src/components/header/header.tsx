@@ -45,10 +45,9 @@ export function Header({ title }: { title: string }) {
                             </li>
                         </ul>
                     </div>
-                    <div className='col justify-self-center'>
-                        <h1 className='page-title'>PB Salon</h1>
+                    <div className='col justify-self-center mt-1'>
+                        <h2 className='page-title'>PB Salon</h2>
                     </div>
-                    <div className='col'></div>
                 </div>
             ) : (
                 <div className='header text-center pt-2 d-print-none'>
