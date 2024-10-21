@@ -25,9 +25,9 @@ div#root,
     }
 
    .big-previous {
-        height: 12rem !important;
-        width: 5rem !important;
-        background-size: 5rem 12rem !important;
+        height: 17rem !important;
+        width: 10rem !important;
+        background-size: 10rem 17rem !important;
     }
 
     .small-previous {
@@ -37,11 +37,18 @@ div#root,
         background-position: center center;
     }
 
-    // .service {
-    //     height: 5rem !important;
-    //     width: 5rem !important;
-    //     background-size: 5rem 5rem !important;
-    // }
+    .service {
+        height: 5rem !important;
+        width: 5rem !important;
+        background-size: 5rem 5rem !important;
+    }
+
+    .home-box {
+        height: 80rem !important;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 9%, rgba(0,0,0,0) 9%) !important;
+    }
 }
 
 
@@ -62,6 +69,19 @@ div#root,
    .hero-image {
     height: 15rem;
    }
+
+   .service {
+        height: 9rem !important;
+        width: 9rem !important;
+        background-size: 9rem 9rem !important;
+    }
+
+    .home-box {
+        height: 70rem !important;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 13%, rgba(0,0,0,0) 13%) !important;
+    }
 }
 
 
@@ -78,6 +98,26 @@ div#root,
         background-size: 15rem 15rem !important;
         background-position: center center;
    }
+
+   .service {
+        height: 12rem !important;
+        width: 12rem !important;
+        background-size: 12rem 12rem !important;
+    }
+
+    .home-box {
+        height: 50rem;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%);
+    }
+}
+
+.home-box {
+    height: 70rem;
+    width: 90%;
+    background-color: var(--highlight-color);
+    background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%);
 }
 
 .saturation {

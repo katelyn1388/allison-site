@@ -10,8 +10,7 @@ export function DivImage({ height, width, img, smallClass }: { height: string; w
                 backgroundSize: `${width} ${height}`,
                 borderBottomLeftRadius: '5px',
                 borderBottomRightRadius: '5px',
-                marginRight: '.5rem',
-                marginLeft: '.5rem',
+                margin: '.5rem',
             }}
         />
     );

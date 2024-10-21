@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LogoPic from '../../assets/Merlinie Logo.jpg';
 import { useState } from 'react';
 import { UseMobileView } from '../../hooks/use-mobile-view';
 import { ThemePicker } from '../theme-picker/theme-picker';

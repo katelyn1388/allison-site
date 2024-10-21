@@ -14,6 +14,7 @@ export default function Page() {
                         backgroundColor: 'var(--highlight-box)',
                         backgroundImage: 'linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%)',
                     }}
+                    className='home-box'
                 >
                     <Services />
                     <Certificates />
