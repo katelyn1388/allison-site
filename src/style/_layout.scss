@@ -20,8 +20,6 @@ div#root,
 @media only screen and (max-width: 930px) {
     .page-root {
         font-size: 15px;
-
-        
     }
 
    .big-previous {
@@ -41,6 +39,16 @@ div#root,
         height: 5rem !important;
         width: 5rem !important;
         background-size: 5rem 5rem !important;
+
+        .service-text {
+            background-color: hsla(0, 0%, 0%, 0.4);
+            height: 1.2rem !important;
+            color: white;
+            text-align: center;
+            font-size: large;
+            padding-top: 0 !important;
+            margin-bottom: .2rem !important;
+        }
     }
 
     .home-box {
@@ -48,6 +56,14 @@ div#root,
         width: 90%;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 9%, rgba(0,0,0,0) 9%) !important;
+    }
+
+    .haircutting {
+        height: 15rem !important;
+        width: 15rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
     }
 }
 
@@ -118,6 +134,10 @@ div#root,
     width: 90%;
     background-color: var(--highlight-color);
     background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%);
+}
+
+.haircutting-section {
+    max-width: fit-content;
 }
 
 .saturation {
