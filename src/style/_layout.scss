@@ -58,12 +58,58 @@ div#root,
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 9%, rgba(0,0,0,0) 9%) !important;
     }
 
-    .haircutting {
-        height: 15rem !important;
-        width: 15rem !important;
+    .service-image {
+        height: 10rem !important;
+        width: 10rem !important;
         background-size: contain !important;
         background-position: center center;
         margin: 0 !important;
+    }
+
+    .haircutting-box {
+        height: 42rem !important;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%) !important;
+    }
+
+    .small-color {
+        height: 6rem !important;
+        width: 6rem !important;
+        background-size: contain !important;
+        background-position: center center;
+    }
+
+    .color-section {
+        font-size: small;
+    }
+
+    .color-box {
+        height: fit-content !important;
+        padding-bottom: 2rem;
+        width: 100%;
+        background-color: var(--bs-body-bg);
+        background-image: linear-gradient(to right, var(--secondary-highlight-box) 2.5%, rgba(0,0,0,0) 2.5%, rgba(0,0,0,0) 97.5%, var(--secondary-highlight-box) 97.5%),
+    }
+
+    .treatment-image {
+        height: 8rem !important;
+        width: 8rem !important;
+        background-size: contain !important;
+        background-position: center center;
+    }
+
+    .treatments-box {
+        height: fit-content !important;
+        width: 95%;
+        background-color: var(--highlight-color);
+    }
+
+    .styling-image {
+        height: 7rem !important;
+        width: 7rem !important;
+        background-size: contain !important;
+        background-position: center center;
     }
 }
 
@@ -92,11 +138,39 @@ div#root,
         background-size: 9rem 9rem !important;
     }
 
+    .service-image {
+        height: 20rem !important;
+        width: 20rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
+    }
+
     .home-box {
         height: 70rem !important;
         width: 90%;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 13%, rgba(0,0,0,0) 13%) !important;
+    }
+
+    .haircutting-box {
+        min-height: fit-content;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 13%, rgba(0,0,0,0) 13%) !important;
+    }
+
+    .color-box {
+        height: 40rem !important;
+        width: 100%;
+        background-color: var(--bs-body-bg);
+        background-image: linear-gradient(to right, var(--secondary-highlight-box) 2.5%, rgba(0,0,0,0) 2.5%, rgba(0,0,0,0) 97.5%, var(--secondary-highlight-box) 97.5%),
+    }
+
+    .treatments-box {
+        height: fit-content !important;
+        width: 95%;
+        background-color: var(--highlight-color);
     }
 }
 
@@ -121,11 +195,39 @@ div#root,
         background-size: 12rem 12rem !important;
     }
 
+    .service-image {
+        height: 28rem !important;
+        width: 28rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
+    }
+
     .home-box {
         height: 50rem;
         width: 90%;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%);
+    }
+
+    .haircutting-box {
+        height: 58rem !important;
+        width: 90%;
+        background-color: var(--highlight-color);
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%) !important;
+    }
+
+    .color-box {
+        height: 40rem !important;
+        width: 100%;
+        background-color: var(--bs-body-bg);
+        background-image: linear-gradient(to right, var(--secondary-highlight-box) 2.5%, rgba(0,0,0,0) 2.5%, rgba(0,0,0,0) 97.5%, var(--secondary-highlight-box) 97.5%),
+    }
+
+    .treatments-box {
+        height: fit-content !important;
+        width: 95%;
+        background-color: var(--highlight-color);
     }
 }
 

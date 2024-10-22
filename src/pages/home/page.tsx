@@ -1,9 +1,15 @@
+import { useCallback } from 'react';
 import { Certificates } from '../../components/certificates';
 import { PreviousWork } from '../../components/previous-work';
 import { Services } from '../../components/services';
 import { AppLayout } from '../layout';
 
 export default function Page() {
+    const scrollToSelection = useCallback((selection: string) => {
+        // eslint-disable-next-line no-restricted-globals
+        location.href = `services#${selection}`;
+    }, []);
+
     return (
         <AppLayout title='Home'>
             <div className='mt-5 flex-column d-flex align-items-center px-0'>
@@ -16,7 +22,7 @@ export default function Page() {
                     }}
                     className='home-box'
                 >
-                    <Services />
+                    <Services scrollToView={scrollToSelection} />
                     <Certificates />
                 </div>
                 <div

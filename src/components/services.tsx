@@ -1,15 +1,35 @@
+import { useEffect } from 'react';
 import { UseMobileView } from '../hooks/use-mobile-view';
 
-export function Services() {
+export function Services({ scrollToView }: { scrollToView: (selection: string) => void }) {
     const { mobileView } = UseMobileView();
+
+    useEffect(() => {
+        console.log('Location: ', window.location.hash);
+        let hash = window.location.hash.slice(1);
+
+        console.log('Selection:', hash);
+        if (hash) {
+            scrollToView(hash);
+        }
+    }, [scrollToView, window.location]);
+
     return (
         <div>
             <h3 className='text-center mb-4 mt-4'>Services</h3>
             <div className={`d-flex justify-content-around services ${mobileView && 'w-100 ms-0'}`}>
-                <Service imgUrl='/images/tattooist.png' text='Haircutting' />
-                <Service imgUrl='/images/color.png' text='Color' />
-                <Service imgUrl='/images/grey-hair.png' text='Treatments' />
-                <Service imgUrl='/images/ginger.png' text='Styling' />
+                <div onClick={() => scrollToView('haircutting')}>
+                    <Service imgUrl='/images/tattooist.png' text='Haircutting' />
+                </div>
+                <div onClick={() => scrollToView('color')}>
+                    <Service imgUrl='/images/color.png' text='Color' />
+                </div>
+                <div onClick={() => scrollToView('treatments')}>
+                    <Service imgUrl='/images/grey-hair.png' text='Treatments' />
+                </div>
+                <div onClick={() => scrollToView('styling')}>
+                    <Service imgUrl='/images/ginger.png' text='Styling' />
+                </div>
             </div>
         </div>
     );
