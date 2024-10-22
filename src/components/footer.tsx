@@ -103,8 +103,8 @@ export function Footer({ title }: { title: string }) {
                     </small>
                 </div>
             ) : (
-                <div className='d-flex justify-content-evenly mt-0 row footer'>
-                    <div className='col-6 col-sm-1'>
+                <div className='d-flex justify-content-evenly mt-0 row footer mx-0'>
+                    <div className='col-6 col-sm-1 text-center'>
                         <img src={AllisonPic} height='100px' width='100px' className='rounded-circle mb-1 saturation' alt='Allison Logo' />
                         <h6>Poopy Butt Salon</h6>
                     </div>
