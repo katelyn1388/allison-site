@@ -325,3 +325,18 @@ div#root,
 .dropdown-menu {
     color: white;
 }
+
+.product {
+    // border: .1rem solid var(--bs-body-color);
+    padding: 1rem;
+    margin: 1rem;
+    text-wrap: wrap;
+    max-width: min-content;
+    box-shadow: 0px 5px 15px rgba(55, 55, 55, 0.163);
+    height: 18rem;
+    padding-top: 2rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

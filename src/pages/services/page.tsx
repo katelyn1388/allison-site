@@ -1,4 +1,4 @@
-import { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 import { Services } from '../../components/services';
 import { AppLayout } from '../layout';
 import { Color } from './color';
