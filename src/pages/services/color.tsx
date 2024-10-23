@@ -13,9 +13,8 @@ export function Color() {
                         <div className='d-flex justify-content-around w-100 d-flex align-items-center mx-0'>
                             <div>
                                 <DivImage height='7rem' width='7rem' img='/images/caramel.png' smallClass='color-image ms-0' />
-                                {/* <DivImage height='18rem' width='18rem' img='/images/caramel.png' smallClass='service-image ms-0' /> */}
                             </div>
-                            <div className='d-flex flex-column flex-wrap mt-2 justify-content-center w-50 me-4'>
+                            <div className='d-flex flex-column flex-wrap mt-2 justify-content-center w-50'>
                                 <div className='text-center mw-100'>
                                     <div className='text-center mt-2'>
                                         <span>Full Foil: $145 and up</span>
@@ -30,7 +29,6 @@ export function Color() {
                             </div>
                             <div>
                                 <DivImage height='7rem' width='7rem' img='/images/kinky-bob.png' smallClass='color-image ms-0' />
-                                {/* <DivImage height='18rem' width='18rem' img='/images/kinky-bob.png' smallClass='service-image ms-0' /> */}
                             </div>
                         </div>
                     </div>
@@ -45,13 +43,13 @@ export function Color() {
                         <div className='d-flex flex-column flex-wrap mt-5 justify-content-center w-50 me-4'>
                             <div className='text-center mw-100 mb-5'>
                                 <div className='text-center mt-2'>
-                                    <span className='fs-6'>Full Foil: $145 and up</span>
+                                    <span className='fs-5'>Full Foil: $145 and up</span>
                                 </div>
                                 <div className='text-center mt-2'>
-                                    <span className='fs-6'>Partial Foil: $117 and up</span>
+                                    <span className='fs-5'>Partial Foil: $117 and up</span>
                                 </div>
                                 <div className='text-center mt-2'>
-                                    <span className='fs-6'>Color: $87 and up</span>
+                                    <span className='fs-5'>Color: $87 and up</span>
                                 </div>
                             </div>
                             <div className='d-flex justify-content-around mx-5 mt-4 mw-100'>

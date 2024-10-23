@@ -7,7 +7,7 @@ export function Haircutting() {
     return (
         <div className='mt-3'>
             {mobileView ? (
-                <div className='haircutting-section w-100 mx-5 w-100 mt-5 text-center'>
+                <div className='haircutting-section w-100 mx-4 w-100 mt-5 text-center'>
                     <h2>Haircutting</h2>
                     <div className='d-flex justify-content-around w-100'>
                         <DivImage height='30rem' width='30rem' img='/images/frank.png' smallClass='service-image' />

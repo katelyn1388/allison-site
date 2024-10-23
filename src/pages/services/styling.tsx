@@ -7,8 +7,8 @@ export function Styling() {
     return (
         <div>
             {mobileView ? (
-                <div className='mt-4 mw-100 mx-5 text-center'>
-                    <div className='treatments-section w-100 mt-5 text-center'>
+                <div className='mt-2 mw-100 mx-4 text-center'>
+                    <div className='treatments-section w-100 mt-4 text-center'>
                         <h2 className='mb-2'>Styling</h2>
                         <div className='d-flex justify-content-center'>
                             <DivImage height='14rem' width='14rem' img='/images/ginger.png' smallClass='styling-image mx-2' />

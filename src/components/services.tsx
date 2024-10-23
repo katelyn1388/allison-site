@@ -20,13 +20,13 @@ export function Services({ scrollToView }: { scrollToView: (selection: string) =
                 <div onClick={() => scrollToView('haircutting')} className='clickable-image'>
                     <Service imgUrl='/images/tattooist.png' text='Haircutting' />
                 </div>
-                <div onClick={() => scrollToView('color')}>
+                <div onClick={() => scrollToView('color')} className='clickable-image'>
                     <Service imgUrl='/images/color.png' text='Color' />
                 </div>
-                <div onClick={() => scrollToView('treatments')}>
+                <div onClick={() => scrollToView('treatments')} className='clickable-image'>
                     <Service imgUrl='/images/grey-hair.png' text='Treatments' />
                 </div>
-                <div onClick={() => scrollToView('styling')}>
+                <div onClick={() => scrollToView('styling')} className='clickable-image'>
                     <Service imgUrl='/images/ginger.png' text='Styling' />
                 </div>
             </div>

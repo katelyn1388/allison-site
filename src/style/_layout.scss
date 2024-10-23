@@ -79,7 +79,6 @@ div#root,
     .haircutting-box {
         height: fit-content !important;
         padding-bottom: 2rem;
-        // height: 42rem !important;
         width: 90%;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 10%, rgba(0,0,0,0) 10%) !important;
@@ -91,7 +90,6 @@ div#root,
         background-size: contain !important;
         background-position: center center;
     }
-
   
 
     .color-box {
@@ -145,13 +143,17 @@ div#root,
     }
 
     .product {
-        height: 12rem !important;
-        width: 8rem !important;
+        height: 14rem !important;
+        width: 10rem !important;
         margin: 0;
 
         .product-img {
-            height: 10rem;
-            width: 6rem;
+            height: 12rem !important;
+            width: 6rem !important;
+        }
+
+        small {
+            min-height: 3.4rem !important;
         }
     }
 
@@ -196,7 +198,7 @@ div#root,
 
     
 
-    .fs-6 {
+    .fs-5 {
         font-size: medium !important;
     }
 
@@ -300,6 +302,10 @@ div#root,
         width: 12rem !important;
         background-size: contain !important;
         background-position: center center;
+    }
+
+    .fs-5 {
+        font-size: larger !important;
     }
 
 
@@ -453,18 +459,30 @@ div#root,
 }
 
 .product {
-    border: .1rem solid rgba(255, 255, 255, 0.293);
+    border: .1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
     padding: 1rem;
+    padding-bottom: 1rem;
     margin: 1rem;
     text-wrap: wrap;
     max-width: min-content;
     box-shadow: 0px 5px 15px rgba(55, 55, 55, 0.163);
-    height: 18rem;
-    padding-top: 2rem;
+    height: 16rem;
+    padding-top: 1rem;
     color: var(--bs-body-color);
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    .product-img {
+        height: 15rem;
+        width: 10rem;
+        margin-bottom: .2rem;
+    }
+
+    small {
+        min-height: 2rem;
     }
 }
 
@@ -475,6 +493,10 @@ div#root,
     background-position: center;
     background-size: cover !important;
     filter: saturate(85%);
-    // border-bottom-right-radius: 5px;
-    // border-bottom-left-radius: 5px;
+}
+
+.clickable-image {
+    &:hover {
+        transform: scale(1.1);
+    }
 }

@@ -7,8 +7,8 @@ export function Treatments() {
     return (
         <div>
             {mobileView ? (
-                <div className='mt-3 mx-5 mw-100'>
-                    <div className='treatments-section w-100 mt-5 text-center'>
+                <div className='mt-3 mx-4 mw-100'>
+                    <div className='treatments-section w-100 mt-4 text-center'>
                         <h2 className='mb-2'>Treatments</h2>
                         <div className='d-flex justify-content-around w-100'>
                             <div
