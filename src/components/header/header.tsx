@@ -22,7 +22,7 @@ export function Header({ title }: { title: string }) {
                                 <Hamburger isOpen={hamburgerOpen} />
                             </div>
                         </div>
-                        <ul style={{ display: hamburgerOpen ? 'block' : 'none', minHeight: '9rem' }} className='dropdown-menu'>
+                        <ul style={{ display: hamburgerOpen ? 'block' : 'none' }} className='dropdown-menu'>
                             <li>
                                 <Link to='/' className={title === 'Home' ? 'active-page nav-link' : 'nav-link'}>
                                     Home
@@ -79,11 +79,6 @@ export function Header({ title }: { title: string }) {
                                 Recommendations
                             </Link>
                         </div>
-                        {/* <div>
-              <Link to="/newzealand" className={title === 'New Zealand' ? 'active-page nav-link' : 'nav-link'}>
-                New Zealand
-              </Link>
-            </div> */}
                     </div>
                 </div>
             )}

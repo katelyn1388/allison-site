@@ -116,7 +116,7 @@ export default function Page() {
                         </div>
                     )}
                 </div>
-                <div className='d-flex flex-column justify-content-center mx-5 mt-3'>
+                <div className='d-flex flex-column justify-content-center mx-5 mt-3 products'>
                     <h3 className='text-center'>Products</h3>
                     <div>
                         <h4>Styling Tools</h4>
@@ -128,7 +128,7 @@ export default function Page() {
                                 href='https://www.amazon.com/dp/B0BBSFTJG5?linkCode=ssc&tag=onamzall00246-20&creativeASIN=B0BBSFTJG5&asc_item-id=amzn1.ideas.3PIMSMFEDCUQC&ref_=cm_sw_r_cp_mwn_aipsfshop_0HNZKJP3RSNY02TFWYMT_1_asin&th=1'
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
-                                    <img src={SharkPic} alt='Shark Blow-dryer' height='200rem' width='160rem' />
+                                    <img className='product-img' src={SharkPic} alt='Shark Blow-dryer' height='200rem' width='160rem' />
                                     <small>Shark HD435 FlexStyle Air Styling & Drying System</small>
                                 </div>
                             </a>
@@ -139,7 +139,7 @@ export default function Page() {
                                 href='https://www.amazon.com/dp/B077H5G7ZB?linkCode=ssc&tag=onamzall00246-20&creativeASIN=B077H5G7ZB&asc_item-id=amzn1.ideas.3PIMSMFEDCUQC&ref_=cm_sw_r_cp_mwn_aipsfshop_0HNZKJP3RSNY02TFWYMT_1_asin'
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
-                                    <img src={BrushPic} alt='Curl Brush' height='200rem' width='160rem' />
+                                    <img className='product-img' src={BrushPic} alt='Curl Brush' height='200rem' width='160rem' />
                                     <small>Curl Keeper Flexy Hair Brush</small>
                                 </div>
                             </a>
@@ -151,6 +151,7 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img'
                                         src='https://m.media-amazon.com/images/I/61WN-SjDInL._SX466_.jpg'
                                         alt='Curl Brush'
                                         height='200rem'
@@ -167,6 +168,7 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img'
                                         src='https://m.media-amazon.com/images/I/61UcMukSxML._SX466_.jpg'
                                         alt='Tangle Teezer'
                                         height='200rem'
@@ -188,6 +190,7 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img'
                                         src='https://m.media-amazon.com/images/I/61JVACnQ9HL._AC_SX679_.jpg'
                                         alt='Steamer'
                                         height='200rem'
@@ -204,6 +207,7 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img'
                                         src='https://m.media-amazon.com/images/I/71vqGu288pL._SX466_.jpg'
                                         alt='Silk Bonnet'
                                         height='200rem'
@@ -220,11 +224,11 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img center'
                                         src='https://m.media-amazon.com/images/I/51CnxY3XOdL._AC_SX679_.jpg'
                                         alt='Shower head filter'
                                         height='200rem'
                                         width='160rem'
-                                        className='center'
                                     />
                                     <small>The Jolie Filtered Showerhead</small>
                                 </div>
@@ -237,6 +241,7 @@ export default function Page() {
                             >
                                 <div className='d-flex flex-column justify-content-center text-center product'>
                                     <img
+                                        className='product-img'
                                         src='https://m.media-amazon.com/images/I/71HLO93DnlL._SX466_.jpg'
                                         alt='Scrunch'
                                         height='200rem'

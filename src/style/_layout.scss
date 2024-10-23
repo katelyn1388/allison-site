@@ -9,6 +9,7 @@ div#root,
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 @media screen {
     .print-only {
         display: none;
@@ -52,10 +53,11 @@ div#root,
     }
 
     .home-box {
-        height: 78rem !important;
+        height: fit-content !important;
+        padding-bottom: 2rem;
         width: 90%;
         background-color: var(--highlight-color);
-        background-image: linear-gradient(to bottom, var(--bs-body-bg) 9%, rgba(0,0,0,0) 9%) !important;
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 5%, rgba(0,0,0,0) 5%) !important;
     }
 
     .service-image {
@@ -66,11 +68,21 @@ div#root,
         margin: 0 !important;
     }
 
+    .color-image {
+        height: 7rem !important;
+        width: 7rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
+    }
+
     .haircutting-box {
-        height: 42rem !important;
+        height: fit-content !important;
+        padding-bottom: 2rem;
+        // height: 42rem !important;
         width: 90%;
         background-color: var(--highlight-color);
-        background-image: linear-gradient(to bottom, var(--bs-body-bg) 15%, rgba(0,0,0,0) 15%) !important;
+        background-image: linear-gradient(to bottom, var(--bs-body-bg) 10%, rgba(0,0,0,0) 10%) !important;
     }
 
     .small-color {
@@ -80,9 +92,7 @@ div#root,
         background-position: center center;
     }
 
-    .color-section {
-        font-size: small;
-    }
+  
 
     .color-box {
         height: fit-content !important;
@@ -110,6 +120,44 @@ div#root,
         width: 7rem !important;
         background-size: contain !important;
         background-position: center center;
+    }
+
+    .certificate {
+        .certificate-text {
+            width: 60% !important;;
+        }
+    }
+
+    .hero-text {
+        font-size: 3rem !important;
+    }
+
+    .hero-image {
+        height: 12rem !important;
+    }
+
+    iframe {
+        height: 105rem !important;
+    }
+
+    .products {
+        margin: 0 !important;
+    }
+
+    .product {
+        height: 12rem !important;
+        width: 8rem !important;
+        margin: 0;
+
+        .product-img {
+            height: 10rem;
+            width: 6rem;
+        }
+    }
+
+    .custom-link {
+        width: fit-content;
+        height: fit-content
     }
 }
 
@@ -146,9 +194,33 @@ div#root,
         margin: 0 !important;
     }
 
+    
+
+    .fs-6 {
+        font-size: medium !important;
+    }
+
+    .small-color {
+        height: 8rem !important;
+        width: 8rem !important;
+        background-size: contain !important;
+        background-position: center center;
+    }
+
+
+    .color-image {
+        height: 15rem !important;
+        width: 15rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
+    }
+
     .home-box {
-        height: 70rem !important;
+        height: fit-content !important;
+        // height: 70rem !important;
         width: 90%;
+        padding-bottom: 2rem;
         background-color: var(--highlight-color);
         background-image: linear-gradient(to bottom, var(--bs-body-bg) 13%, rgba(0,0,0,0) 13%) !important;
     }
@@ -172,10 +244,30 @@ div#root,
         width: 95%;
         background-color: var(--highlight-color);
     }
+
+    .certificate {
+        width: 40% !important;
+
+        .certificate-text {
+            font-size: 1rem;
+        }
+    }
 }
 
 
 @media only screen and (min-width: 1400px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    .haircutting-section {
+        font-size: 1rem;
+    }
+
     .big-previous {
         height: 32rem !important;
         width: 25rem !important;
@@ -198,6 +290,22 @@ div#root,
     .service-image {
         height: 28rem !important;
         width: 28rem !important;
+        background-size: contain !important;
+        background-position: center center;
+        margin: 0 !important;
+    }
+
+    .small-color {
+        height: 12rem !important;
+        width: 12rem !important;
+        background-size: contain !important;
+        background-position: center center;
+    }
+
+
+    .color-image {
+        height: 25rem !important;
+        width: 25rem !important;
         background-size: contain !important;
         background-position: center center;
         margin: 0 !important;
@@ -229,6 +337,14 @@ div#root,
         width: 95%;
         background-color: var(--highlight-color);
     }
+
+    .certificate {
+        width: 35% !important;
+
+        .certificate-text {
+            font-size: 1rem;
+        }
+    }
 }
 
 .home-box {
@@ -239,6 +355,10 @@ div#root,
 }
 
 .haircutting-section {
+    max-width: fit-content;
+}
+
+.treatments-section {
     max-width: fit-content;
 }
 
@@ -324,6 +444,12 @@ div#root,
 
 .dropdown-menu {
     color: white;
+    padding-top: .5rem !important;
+    height: fit-content;
+
+    li {
+        margin-bottom: .2rem;
+    }
 }
 
 .product {
@@ -340,4 +466,15 @@ div#root,
     &:hover {
         transform: scale(1.1);
     }
+}
+
+
+.img {
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(55, 55, 55, 0.59);
+    background-position: center;
+    background-size: cover !important;
+    filter: saturate(85%);
+    // border-bottom-right-radius: 5px;
+    // border-bottom-left-radius: 5px;
 }

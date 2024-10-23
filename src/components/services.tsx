@@ -16,9 +16,8 @@ export function Services({ scrollToView }: { scrollToView: (selection: string) =
 
     return (
         <div>
-            <h3 className='text-center mb-4 mt-4'>Services</h3>
-            <div className={`d-flex justify-content-around services ${mobileView && 'w-100 ms-0'}`}>
-                <div onClick={() => scrollToView('haircutting')}>
+            <div className={`d-flex justify-content-around services mt-3 ${mobileView && 'w-100 ms-0'}`}>
+                <div onClick={() => scrollToView('haircutting')} className='clickable-image'>
                     <Service imgUrl='/images/tattooist.png' text='Haircutting' />
                 </div>
                 <div onClick={() => scrollToView('color')}>

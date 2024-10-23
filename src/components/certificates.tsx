@@ -44,7 +44,7 @@ function Certificate({ imgUrl, text, name }: { imgUrl: string; text: string; nam
     const { mobileView } = UseMobileView();
 
     return (
-        <div className={`${mobileView ? 'w-75 mt-3' : 'w-25'}`}>
+        <div className={`certificate ${mobileView ? 'w-75 mt-3' : 'w-25'}`}>
             <h5 className='text-center'>{name}</h5>
             <hr />
             <div className='d-flex justify-content-between align-items-center'>
@@ -54,7 +54,7 @@ function Certificate({ imgUrl, text, name }: { imgUrl: string; text: string; nam
                     }}
                     className='d-flex align-items-end service'
                 ></div>
-                <small className='w-50'>{text}</small>
+                <small className='w-50 certificate-text'>{text}</small>
             </div>
         </div>
     );

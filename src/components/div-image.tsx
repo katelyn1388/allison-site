@@ -1,7 +1,7 @@
 export function DivImage({ height, width, img, smallClass }: { height: string; width: string; img: string; smallClass: string }) {
     return (
         <div
-            className={smallClass}
+            className={`img ${smallClass}`}
             style={{
                 height: height,
                 width: width,
