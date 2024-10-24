@@ -68,7 +68,7 @@ export default function Page() {
                                     a treatment specialized for your specific hair needs
                                 </p>
                                 <p>
-                                    One your treatment is complete, I will teach you how to properly style your hair and give you my
+                                    Once your treatment is complete, I will teach you how to properly style your hair and give you my
                                     professional product recommendations
                                 </p>
                             </div>
