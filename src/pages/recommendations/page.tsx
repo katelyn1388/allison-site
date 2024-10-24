@@ -1,6 +1,4 @@
 import { AppLayout } from '../layout';
-import SharkPic from '../../assets/shark-product.jpg';
-import BrushPic from '../../assets/curl-brush-product.jpg';
 import { UseMobileView } from '../../hooks/use-mobile-view';
 
 // type ProductDetails = {
@@ -108,7 +106,11 @@ export default function Page() {
                                     href='https://www.amazon.com/dp/B0BBSFTJG5?linkCode=ssc&tag=onamzall00246-20&creativeASIN=B0BBSFTJG5&asc_item-id=amzn1.ideas.3PIMSMFEDCUQC&ref_=cm_sw_r_cp_mwn_aipsfshop_0HNZKJP3RSNY02TFWYMT_1_asin&th=1'
                                 >
                                     <div className='d-flex flex-column justify-content-center text-center product'>
-                                        <img className='product-img' src={SharkPic} alt='Shark Blow-dryer' />
+                                        <img
+                                            className='product-img'
+                                            src='https://m.media-amazon.com/images/I/71FgwK2QNQL.__AC_SX300_SY300_QL70_FMwebp_.jpg'
+                                            alt='Shark Blow-dryer'
+                                        />
                                         <small>Shark FlexStyle Air Styling & Drying</small>
                                     </div>
                                 </a>
@@ -119,7 +121,13 @@ export default function Page() {
                                     href='https://www.amazon.com/dp/B077H5G7ZB?linkCode=ssc&tag=onamzall00246-20&creativeASIN=B077H5G7ZB&asc_item-id=amzn1.ideas.3PIMSMFEDCUQC&ref_=cm_sw_r_cp_mwn_aipsfshop_0HNZKJP3RSNY02TFWYMT_1_asin'
                                 >
                                     <div className='d-flex flex-column justify-content-center text-center product'>
-                                        <img className='product-img' src={BrushPic} alt='Curl Brush' height='200rem' width='160rem' />
+                                        <img
+                                            className='product-img'
+                                            src='https://m.media-amazon.com/images/I/41hCRQ5b1HL._SX300_SY300_QL70_FMwebp_.jpg'
+                                            alt='Curl Brush'
+                                            height='200rem'
+                                            width='160rem'
+                                        />
                                         <small>Curl Keeper Flexy Hair Brush</small>
                                     </div>
                                 </a>
@@ -238,37 +246,3 @@ export default function Page() {
         </AppLayout>
     );
 }
-
-// export function getSiteInfo({ url }: { url: string }) {
-//     const requestHandler = async (context: CheerioCrawlingContext) => {
-//         const { $, request } = context;
-//         const { url } = request;
-
-//         const title = $(Selectors.title).text().trim();
-//         const price = $(Selectors.price).text().trim();
-//         const image = $(Selectors.image).attr('src') || null;
-
-//         // const extractedProduct = extractProductDetails($)
-
-//         // crawler.pushData(extractedProduct)
-//     };
-
-//     const crawler = new CheerioCrawler({ requestHandler });
-//     const results = crawler.run([url]);
-
-//     return results;
-// }
-
-// export const extractProductDetails = ($: CheerioAPI): ProductDetails => {
-//     const title = $(Selectors.title).text().trim();
-//     const price = Number(
-//         $(Selectors.price)
-//             .first()
-//             .text()
-//             .replace(/[^\d.]+/g, '')
-//     );
-
-//     const image = $(Selectors.image).attr('src') || null;
-
-//     return { title, price, image };
-// };
