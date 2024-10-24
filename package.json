@@ -35,12 +35,8 @@
   "scripts": {
     "predeploy": "env PUBLIC_URL=https://katelyn1388.github.io/allison-site npm run build",
     "deploy": "gh-pages -b main -d build",
-    "start": "npm run start:client",
-    "build": "npm run build:client",
-    "build:all": "npm run build:client",
-    "start:client": "react-scripts start",
-    "start:server": "node ./bin/server/index.js",
-    "build:client": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "browse": "start http://localhost:3000"
