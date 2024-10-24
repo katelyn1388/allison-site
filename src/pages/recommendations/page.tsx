@@ -34,7 +34,7 @@ export default function Page() {
                     className='home-box'
                 >
                     <div>
-                        <h2 className='mb-5 ms-2'>Allison's Recommendations</h2>
+                        <h2 className='mb-5 ms-2'>Poopy Butt's Recommendations</h2>
                         <hr
                             style={{
                                 border: '0',
