@@ -5,7 +5,7 @@ export function DivImage({ height, width, img, smallClass }: { height: string; w
             style={{
                 height: height,
                 width: width,
-                backgroundImage: `url(${img})`,
+                backgroundImage: `url(${process.env.PUBLIC_URL} ${img})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: `${width} ${height}`,
                 borderBottomLeftRadius: '5px',

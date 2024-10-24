@@ -11,9 +11,9 @@ export function Styling() {
                     <div className='treatments-section w-100 mt-4 text-center'>
                         <h2 className='mb-2'>Styling</h2>
                         <div className='d-flex justify-content-center'>
-                            <DivImage height='14rem' width='14rem' img='/images/freckle.png' smallClass='styling-image mx-2' />
-                            <DivImage height='14rem' width='14rem' img='/images/ford.png' smallClass='styling-image mx-2' />
-                            <DivImage height='14rem' width='14rem' img='/images/fro.png' smallClass='styling-image mx-2' />
+                            <DivImage height='14rem' width='14rem' img='images/freckle.png' smallClass='styling-image mx-2' />
+                            <DivImage height='14rem' width='14rem' img='images/ford.png' smallClass='styling-image mx-2' />
+                            <DivImage height='14rem' width='14rem' img='images/fro.png' smallClass='styling-image mx-2' />
                         </div>
                         <div className='d-flex justify-content-around w-100 d-flex align-items-end'>
                             <div className='d-flex flex-column ms-2 flex-wrap mt-2 justify-content-center w-100'>
@@ -48,9 +48,9 @@ export function Styling() {
                 <div className='treatments-section mw-100 mx-5 mt-5 text-center'>
                     <h2 className='mb-2'>Styling</h2>
                     <div className='d-flex justify-content-center'>
-                        <DivImage height='14rem' width='14rem' img='/images/freckle.png' smallClass='treatment-image mx-5' />
-                        <DivImage height='14rem' width='14rem' img='/images/ford.png' smallClass='treatment-image mx-5' />
-                        <DivImage height='14rem' width='14rem' img='/images/fro.png' smallClass='treatment-image mx-5' />
+                        <DivImage height='14rem' width='14rem' img='images/freckle.png' smallClass='treatment-image mx-5' />
+                        <DivImage height='14rem' width='14rem' img='images/ford.png' smallClass='treatment-image mx-5' />
+                        <DivImage height='14rem' width='14rem' img='images/fro.png' smallClass='treatment-image mx-5' />
                     </div>
                     <div className='d-flex justify-content-around w-100 d-flex align-items-end'>
                         <div className='d-flex flex-column ms-2 flex-wrap mt-2 justify-content-center w-50 me-4'>

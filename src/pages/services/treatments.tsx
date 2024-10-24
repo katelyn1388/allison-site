@@ -23,7 +23,7 @@ export function Treatments() {
                                     display: 'flex',
                                 }}
                             >
-                                <DivImage height='14rem' width='14rem' img='/images/grey-hair.png' smallClass='treatment-image' />
+                                <DivImage height='14rem' width='14rem' img='images/grey-hair.png' smallClass='treatment-image' />
                             </div>
                             <div
                                 style={{
@@ -37,7 +37,7 @@ export function Treatments() {
                                     display: 'flex',
                                 }}
                             >
-                                <DivImage height='14rem' width='14rem' img='/images/wide-curls.png' smallClass='treatment-image' />
+                                <DivImage height='14rem' width='14rem' img='images/wide-curls.png' smallClass='treatment-image' />
                             </div>
                         </div>
                         <div className='d-flex justify-content-around w-100 d-flex align-items-end'>
@@ -83,7 +83,7 @@ export function Treatments() {
                                 display: 'flex',
                             }}
                         >
-                            <DivImage height='14rem' width='14rem' img='/images/grey-hair.png' smallClass='treatment-image' />
+                            <DivImage height='14rem' width='14rem' img='images/grey-hair.png' smallClass='treatment-image' />
                         </div>
                         <div
                             style={{
@@ -97,7 +97,7 @@ export function Treatments() {
                                 display: 'flex',
                             }}
                         >
-                            <DivImage height='14rem' width='14rem' img='/images/wide-curls.png' smallClass='treatment-image' />
+                            <DivImage height='14rem' width='14rem' img='images/wide-curls.png' smallClass='treatment-image' />
                         </div>
                     </div>
                     <div className='d-flex justify-content-around w-100 d-flex align-items-end'>

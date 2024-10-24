@@ -12,13 +12,13 @@ export function Certificates() {
 
             <div className='d-flex justify-content-around flex-wrap'>
                 <Certificate
-                    imgUrl='/images/rezo.png'
+                    imgUrl='images/rezo.png'
                     text='A Rezo cut is a specialized technique for curly and textured hair that increases volume, defines your curl pattern and 
                     allows you to customize your desired silhouette.'
                     name='Rëzo Certified'
                 />
                 <Certificate
-                    imgUrl='/images/cado.png'
+                    imgUrl='images/cado.png'
                     text='This certificate gives a better understanding of cutting, 
                 styling and coloring textured hair to enhance natural texture'
                     name='Cadō Certified'
@@ -26,12 +26,12 @@ export function Certificates() {
             </div>
             <div className='d-flex justify-content-around mt-5 flex-wrap'>
                 <Certificate
-                    imgUrl='/images/ford.png'
+                    imgUrl='images/ford.png'
                     text='Cut It Kinky sets the standard for expertise in the art and science of tight curls and natural hair.'
                     name='Cut it Kinky Alumni'
                 />
                 <Certificate
-                    imgUrl='/images/graduation.png'
+                    imgUrl='images/graduation.png'
                     text='Paul Mitchell Schools are renowned for their comprehensive cosmetology course, combining technical skills with creativity and business know-how'
                     name='Paul Mitchell Graduate'
                 />

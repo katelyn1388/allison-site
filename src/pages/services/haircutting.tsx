@@ -10,7 +10,7 @@ export function Haircutting() {
                 <div className='haircutting-section w-100 mx-4 w-100 mt-5 text-center'>
                     <h2>Haircutting</h2>
                     <div className='d-flex justify-content-around w-100'>
-                        <DivImage height='30rem' width='30rem' img='/images/frank.png' smallClass='service-image' />
+                        <DivImage height='30rem' width='30rem' img='images/frank.png' smallClass='service-image' />
                         <div className='d-flex flex-column w-75 ms-2'>
                             <div className='d-flex flex-column justify-content-center text-center mt-3'>
                                 <div className='d-flex flex-column justify-content-center'>
@@ -56,7 +56,7 @@ export function Haircutting() {
 
                     <div className='d-flex justify-content-around w-100'>
                         <div>
-                            <DivImage height='28rem' width='28rem' img='/images/frank.png' smallClass='service-image' />
+                            <DivImage height='28rem' width='28rem' img='images/frank.png' smallClass='service-image' />
                         </div>
                         <div className='d-flex flex-column w-50 ms-2 flex-wrap mt-5'>
                             <div className='d-flex flex-column justify-content-center text-center mt-3'>

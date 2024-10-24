@@ -10,14 +10,14 @@ export function PreviousWork() {
                 Previous Work
             </h3>
             <div className='d-flex justify-content-around flex-wrap'>
-                <DivImage height={smallSize} width={smallSize} img='/images/black-curls.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/fall-vibes.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/wide-curls.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/frank.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/kinky-bob.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/ford.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/caramel.png' smallClass='small-previous saturation' />
-                <DivImage height={smallSize} width={smallSize} img='/images/fro.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/black-curls.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/fall-vibes.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/wide-curls.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/frank.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/kinky-bob.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/ford.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/caramel.png' smallClass='small-previous saturation' />
+                <DivImage height={smallSize} width={smallSize} img='images/fro.png' smallClass='small-previous saturation' />
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ export function HeroImage({ title }: { title: string }) {
         <div>
             <div
                 style={{
-                    backgroundImage: `url('/images/hero-image.png')`,
+                    backgroundImage: `url('images/hero-image.png')`,
                 }}
                 className='w-100 hero-image'
             >

@@ -18,16 +18,16 @@ export function Services({ scrollToView }: { scrollToView: (selection: string) =
         <div>
             <div className={`d-flex justify-content-around services mt-3 ${mobileView && 'w-100 ms-0'}`}>
                 <div onClick={() => scrollToView('haircutting')} className='clickable-image'>
-                    <Service imgUrl='/images/tattooist.png' text='Haircutting' />
+                    <Service imgUrl='images/tattooist.png' text='Haircutting' />
                 </div>
                 <div onClick={() => scrollToView('color')} className='clickable-image'>
-                    <Service imgUrl='/images/color.png' text='Color' />
+                    <Service imgUrl='images/color.png' text='Color' />
                 </div>
                 <div onClick={() => scrollToView('treatments')} className='clickable-image'>
-                    <Service imgUrl='/images/grey-hair.png' text='Treatments' />
+                    <Service imgUrl='images/grey-hair.png' text='Treatments' />
                 </div>
                 <div onClick={() => scrollToView('styling')} className='clickable-image'>
-                    <Service imgUrl='/images/ginger.png' text='Styling' />
+                    <Service imgUrl='images/ginger.png' text='Styling' />
                 </div>
             </div>
         </div>
