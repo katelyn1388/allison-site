@@ -35,7 +35,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "env PUBLIC_URL=https://katelyn1388.github.io/allison-site/ npm run build",
+    "predeploy": "env PUBLIC_URL=https://katelyn1388.github.io/allison-site npm run build",
     "deploy": "gh-pages -b main -d build",
     "start": "npm run start:client",
     "build": "npm run build:client",
