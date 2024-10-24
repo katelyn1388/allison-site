@@ -11,7 +11,7 @@ export function Styling() {
                     <div className='treatments-section w-100 mt-4 text-center'>
                         <h2 className='mb-2'>Styling</h2>
                         <div className='d-flex justify-content-center'>
-                            <DivImage height='14rem' width='14rem' img='/images/ginger.png' smallClass='styling-image mx-2' />
+                            <DivImage height='14rem' width='14rem' img='/images/freckle.png' smallClass='styling-image mx-2' />
                             <DivImage height='14rem' width='14rem' img='/images/ford.png' smallClass='styling-image mx-2' />
                             <DivImage height='14rem' width='14rem' img='/images/fro.png' smallClass='styling-image mx-2' />
                         </div>
@@ -48,7 +48,7 @@ export function Styling() {
                 <div className='treatments-section mw-100 mx-5 mt-5 text-center'>
                     <h2 className='mb-2'>Styling</h2>
                     <div className='d-flex justify-content-center'>
-                        <DivImage height='14rem' width='14rem' img='/images/ginger.png' smallClass='treatment-image mx-5' />
+                        <DivImage height='14rem' width='14rem' img='/images/freckle.png' smallClass='treatment-image mx-5' />
                         <DivImage height='14rem' width='14rem' img='/images/ford.png' smallClass='treatment-image mx-5' />
                         <DivImage height='14rem' width='14rem' img='/images/fro.png' smallClass='treatment-image mx-5' />
                     </div>
