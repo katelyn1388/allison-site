@@ -2,14 +2,15 @@ import { AppLayout } from '../layout';
 import SharkPic from '../../assets/shark-product.jpg';
 import BrushPic from '../../assets/curl-brush-product.jpg';
 import { UseMobileView } from '../../hooks/use-mobile-view';
-// import { CheerioAPI } from 'cheerio';
-// import { CheerioCrawler, CheerioCrawlingContext } from 'crawlee';
-// import { useMemo } from 'react';
 
 // type ProductDetails = {
 //     title: string;
 //     price: number;
 //     image: string | null;
+// };
+
+// type Products = {
+//     shark: ProductDetails;
 // };
 
 // const Selectors = {
@@ -238,18 +239,22 @@ export default function Page() {
     );
 }
 
-// export function getSiteInfo({url}: {url: string}) {
-//     const requestHandler = async(context: CheerioCrawlingContext) => {
+// export function getSiteInfo({ url }: { url: string }) {
+//     const requestHandler = async (context: CheerioCrawlingContext) => {
 //         const { $, request } = context;
 //         const { url } = request;
 
-//         const extractedProduct = extractProductDetails($)
+//         const title = $(Selectors.title).text().trim();
+//         const price = $(Selectors.price).text().trim();
+//         const image = $(Selectors.image).attr('src') || null;
 
-//         crawler.pushData(extractedProduct)
-//     }
+//         // const extractedProduct = extractProductDetails($)
 
-//     const crawler = new CheerioCrawler({ requestHandler })
-//     const results = await crawler.run([url]);
+//         // crawler.pushData(extractedProduct)
+//     };
+
+//     const crawler = new CheerioCrawler({ requestHandler });
+//     const results = crawler.run([url]);
 
 //     return results;
 // }
