@@ -7,3 +7,4 @@ apply-filters-button.tsx
 
 # Ignore all HTML files:
 **/*.html
+.prettierrc
