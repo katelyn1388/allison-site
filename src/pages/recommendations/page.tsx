@@ -2,21 +2,21 @@ import { AppLayout } from '../layout';
 import SharkPic from '../../assets/shark-product.jpg';
 import BrushPic from '../../assets/curl-brush-product.jpg';
 import { UseMobileView } from '../../hooks/use-mobile-view';
-import { CheerioAPI } from 'cheerio';
-import { CheerioCrawler, CheerioCrawlingContext } from 'crawlee';
-import { useMemo } from 'react';
+// import { CheerioAPI } from 'cheerio';
+// import { CheerioCrawler, CheerioCrawlingContext } from 'crawlee';
+// import { useMemo } from 'react';
 
-type ProductDetails = {
-    title: string;
-    price: number;
-    image: string | null;
-};
+// type ProductDetails = {
+//     title: string;
+//     price: number;
+//     image: string | null;
+// };
 
-const Selectors = {
-    title: 'span#productTitle',
-    price: 'span#a-price > a-offscreen',
-    image: '#imgTagWrapperId img',
-} as const;
+// const Selectors = {
+//     title: 'span#productTitle',
+//     price: 'span#a-price > a-offscreen',
+//     image: '#imgTagWrapperId img',
+// } as const;
 
 export default function Page() {
     const { mobileView } = UseMobileView();

@@ -5,10 +5,8 @@ export function Services({ scrollToView }: { scrollToView: (selection: string) =
     const { mobileView } = UseMobileView();
 
     useEffect(() => {
-        console.log('Location: ', window.location.hash);
         let hash = window.location.hash.slice(1);
 
-        console.log('Selection:', hash);
         if (hash) {
             scrollToView(hash);
         }
