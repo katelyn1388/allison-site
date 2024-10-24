@@ -26,5 +26,5 @@ yarn-error.log*
 
 .vscode/settings.json
 .prettierrc.json
-.env*
+.env.development
 .prettierrc
