@@ -1,6 +1,4 @@
 import { useMsal } from '@azure/msal-react';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import { loginRequest } from '../../api/auth-config';
 
 export const SignInButton = () => {
@@ -18,13 +16,8 @@ export const SignInButton = () => {
         }
     };
     return (
-        <DropdownButton variant='secondary' className='ml-auto' drop='start' title='Sign In'>
-            <Dropdown.Item as='button' onClick={() => handleLogin('popup')}>
-                Sign in using Popup
-            </Dropdown.Item>
-            <Dropdown.Item as='button' onClick={() => handleLogin('redirect')}>
-                Sign in using Redirect
-            </Dropdown.Item>
-        </DropdownButton>
+        <button className='ml-auto btn btn-secondary me-3 mt-2' title='Sign Out' onClick={() => handleLogin('popup')}>
+            Sign In
+        </button>
     );
 };

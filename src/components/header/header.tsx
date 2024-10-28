@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { UseMobileView } from '../../hooks/use-mobile-view';
-import { ThemePicker } from '../theme-picker/theme-picker';
 import { SalonName } from '../../types/salon-name';
 import { useIsAuthenticated } from '@azure/msal-react';
 import { SignOutButton } from './sign-out-botton';
@@ -17,13 +16,15 @@ export function Header({ title }: { title: string }) {
 
     const { mobileView } = UseMobileView();
 
+    const [signInEnabled, setSignInEnabled] = useState(true);
+
     return (
         <div>
             {mobileView ? (
                 <div className='header text-center pt-2 d-flex justify-content-between'>
-                    <div className='col navigation'>
+                    <div className='navigation'>
                         <div className='d-flex justify-content-start mt-2'>
-                            <div className='col' onClick={toggleHamburger}>
+                            <div onClick={toggleHamburger}>
                                 <Hamburger isOpen={hamburgerOpen} />
                             </div>
                         </div>
@@ -50,20 +51,22 @@ export function Header({ title }: { title: string }) {
                             </li>
                         </ul>
                     </div>
-                    <div className='col justify-self-center mt-1 text-center'>
+                    <div className=' justify-self-center mt-1 me-3 text-center'>
                         <h2 className='page-title'>{SalonName}</h2>
                     </div>
+                    {signInEnabled && <div>{isAuthenticated ? <SignOutButton /> : <SignInButton />}</div>}
                 </div>
             ) : (
                 <div className='header text-center pt-2 d-print-none'>
-                    <div className='d-flex justify-content-between'>
-                        {/* <div></div> */}
+                    {signInEnabled ? (
+                        <div className='d-flex justify-content-between'>
+                            <div className='ms-5'></div>
+                            <h1 className='page-title mt-2'>{SalonName}</h1>
+                            <div>{isAuthenticated ? <SignOutButton /> : <SignInButton />}</div>
+                        </div>
+                    ) : (
                         <h1 className='page-title mt-2'>{SalonName}</h1>
-                        {/* <span className='align-right me-3'>
-                            <ThemePicker />
-                        </span> */}
-                        <div>{isAuthenticated ? <SignOutButton /> : <SignInButton />}</div>
-                    </div>
+                    )}
                     <div className='nav-bar d-flex justify-content-evenly'>
                         <div>
                             <Link to='/' className={title === 'Home' ? 'active-page nav-link' : 'nav-link'}>
