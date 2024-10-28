@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { UseMobileView } from '../../hooks/use-mobile-view';
 import { SalonName } from '../../types/salon-name';
-import { useIsAuthenticated } from '@azure/msal-react';
+import { AuthenticatedTemplate, useIsAuthenticated } from '@azure/msal-react';
 import { SignOutButton } from './sign-out-botton';
 import { SignInButton } from './sign-in-button';
 
@@ -49,6 +49,13 @@ export function Header({ title }: { title: string }) {
                                     Recommendations
                                 </Link>
                             </li>
+                            <AuthenticatedTemplate>
+                                <li>
+                                    <Link to='/admin' className={title === 'Admin' ? 'active-page nav-link' : 'nav-link'}>
+                                        Admin
+                                    </Link>
+                                </li>
+                            </AuthenticatedTemplate>
                         </ul>
                     </div>
                     <div className=' justify-self-center mt-1 me-3 text-center'>
@@ -88,6 +95,13 @@ export function Header({ title }: { title: string }) {
                                 Recommendations
                             </Link>
                         </div>
+                        <AuthenticatedTemplate>
+                            <div>
+                                <Link to='/admin' className={title === 'Admin' ? 'active-page nav-link' : 'nav-link'}>
+                                    Admin
+                                </Link>
+                            </div>
+                        </AuthenticatedTemplate>
                     </div>
                 </div>
             )}
