@@ -7,6 +7,25 @@ div#root,
     color: var(--bs-body-color);
     min-width: fit-content;
     font-family: 'Times New Roman', Times, serif;
+
+    --bs-body-color: white;
+    --nav-link: white;
+
+    --bs-primary: #323A3E;
+    --bs-body-bg: #5D6E78;
+    --active-nav-link: #bce5fa;
+    --hover-link: #a5e1ff;
+    --highlight-box: #323a3e;
+    --secondary-highlight-box: #778B96;
+    --extra-dark: #2A3034;
+
+    .header {
+        color: white;
+    }
+
+    .footer {
+        color: white;
+    }
 }
 
 

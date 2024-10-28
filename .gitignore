@@ -28,3 +28,4 @@ yarn-error.log*
 .prettierrc.json
 .env.development
 .prettierrc
+.env

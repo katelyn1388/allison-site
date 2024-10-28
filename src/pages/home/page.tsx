@@ -3,6 +3,7 @@ import { Certificates } from '../../components/certificates';
 import { PreviousWork } from '../../components/previous-work';
 import { Services } from '../../components/services';
 import { AppLayout } from '../layout';
+import { AuthenticatedTemplate, UnauthenticatedTemplate } from '@azure/msal-react';
 
 export default function Page() {
     const scrollToSelection = useCallback((selection: string) => {
@@ -23,7 +24,12 @@ export default function Page() {
                     className='home-box'
                 >
                     <Services scrollToView={scrollToSelection} />
-                    <Certificates />
+                    <AuthenticatedTemplate>
+                        <Certificates />
+                    </AuthenticatedTemplate>
+                    <UnauthenticatedTemplate>
+                        <div>LOGIN</div>
+                    </UnauthenticatedTemplate>
                 </div>
                 <div
                     style={{
