@@ -1,11 +1,12 @@
 import { CustomTheme } from '../../types/custom-theme';
+import { SalonName } from '../../types/salon-name';
 import ImageUnloaded from '../loaders/image-unloaded';
 
 export function ThemePreview({ primary, background, text }: CustomTheme) {
     return (
         <div className='border border-dark rounded w-75' style={{ backgroundColor: background, overflow: 'hidden' }}>
             <div className='row w-100 ps-4' style={{ backgroundColor: primary, top: '0', marginLeft: '.01rem', color: text }}>
-                <h5 className='text-center'>Poopy Butt Salon</h5>
+                <h5 className='text-center'>{SalonName}</h5>
                 <div className='d-flex justify-content-around'>
                     <h6 style={{ opacity: '70%' }}>Home</h6>
                     <h6>Home</h6>
