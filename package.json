@@ -1,8 +1,18 @@
 {
-  "homepage": "https://katelyn1388.github.io/allison-site/",
   "name": "allison-site",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
+    "start": "react-scripts start && npm run build",
+    "server": "npm run build:server && npm run start:server && npm run tutorial:server",
+    "start:server": "node ./bin/server/index.js",
+    "build:server": "tsc -p server",
+    "tutorial:server": "swa start build --api-location api",
+    "build": "react-scripts build && npm run start",
+    "browse": "start http://localhost:3000"
+  },
   "dependencies": {
     "@azure/msal-browser": "^3.26.1",
     "@azure/msal-react": "^2.1.1",
@@ -33,15 +43,6 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "browse": "start http://localhost:3000"
   },
   "eslintConfig": {
     "extends": [
