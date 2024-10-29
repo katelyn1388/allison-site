@@ -2,7 +2,18 @@
   "name": "allison-site",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
+    "start": "react-scripts start",
+    "build": "tsc && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "browse": "start http://localhost:3000"
+  },
   "dependencies": {
+    "@azure/msal-browser": "^3.26.1",
+    "@azure/msal-react": "^2.1.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -30,15 +41,6 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "browse": "start http://localhost:3000"
   },
   "eslintConfig": {
     "extends": [
