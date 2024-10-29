@@ -5,9 +5,9 @@ export function Certificates() {
         <div className='text-center mt-5 certificates d-flex flex-column align-items-center'>
             <h3 className='text-center mb-4'>About Allie Luckert</h3>
             <p className='text-center d-flex justify-content-center align-items-center move w-75 mb-5'>
-                Allison is a curl specialist located in St Louis, MO. She works at Salon Beautique and is also a manager there. She
-                graduated from Paul Mitchell in 2019 and has been working as a hairstylist ever since. She has since become a curly hair
-                specialist by taking extra classes in the different curly cut techniques and she even has several certificates
+                Allie is a curl specialist located in St Louis, MO. She works at Salon Beautique and is also a manager there. She graduated
+                from Paul Mitchell in 2019 and has been working as a hairstylist ever since. She has since become a curly hair specialist by
+                taking extra classes in the different curly cut techniques and she even has several certificates
             </p>
 
             <div className='d-flex justify-content-around flex-wrap'>
