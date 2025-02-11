@@ -8,6 +8,7 @@ export default function Page() {
     useEffect(() => {
         (async function () {
             const { text } = await (await fetch('/api/message')).json();
+            console.log('Running, and the text is....', text);
             setData(text);
         })();
     }, []);
